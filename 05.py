@@ -17,32 +17,32 @@ Sample input and output 2:
 ...
 
 
-# Function to calculate total contribution
+
 def calculate_contribution(senior_salary, junior_salary):
-    # Number of players
+    
     senior_players = 6
     junior_players = 5
     
-    # Contributions from senior and junior players
+   
     senior_contribution = (senior_salary * 0.5) * senior_players
     junior_contribution = (junior_salary * 0.4) * junior_players
     
-    # Total contribution
+    
     total_contribution = senior_contribution + junior_contribution
     return total_contribution
 
-# Main function
+
 def main():
-    # Input salaries
+   
     senior_salary = int(input())
     junior_salary = int(input())
     
-    # Calculate total contribution
+    
     total_contribution = calculate_contribution(senior_salary, junior_salary)
     
-    # Output the total contribution rounded to 2 decimal places
+    
     print(f"{total_contribution:.2f}")
 
-# Call the main function
+
 if __name__ == "__main__":
     main()
