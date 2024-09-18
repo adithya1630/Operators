@@ -17,34 +17,28 @@ Sample input and output 2:
 40
 ...
 
-# Function to calculate ages of players
+
 def calculate_ages(total_age):
-    # Let age of players X and Y be 'a'
-    # Age of player Z will be 'a + 10'
+   
     
-    # Total age equation: a + a + (a + 10) = total_age
-    # This simplifies to: 3a + 10 = total_age
-    # Therefore: 3a = total_age - 10
-    # So: a = (total_age - 10) / 3
-    
-    a = (total_age - 10) // 3  # Calculate age of players X and Y
-    z = a + 10                 # Calculate age of player Z
+    a = (total_age - 10) // 3  
+    z = a + 10                
     
     return a, a, z
 
-# Main function
+
 def main():
-    # Input the total age of the players
+  
     total_age = int(input())
     
-    # Calculate the ages
+    
     age_x, age_y, age_z = calculate_ages(total_age)
     
-    # Output the ages
+   
     print(age_x)
     print(age_y)
     print(age_z)
 
-# Call the main function
+
 if __name__ == "__main__":
     main()
